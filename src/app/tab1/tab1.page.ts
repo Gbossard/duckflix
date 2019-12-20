@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 
+import {ModalController} from '@ionic/angular';
+import {DetailFilmPage} from '../detail-film/detail-film.page';
+
 @Component({
   selector: 'app-tab1',
   templateUrl: 'tab1.page.html',
@@ -7,6 +10,15 @@ import { Component } from '@angular/core';
 })
 export class Tab1Page {
 
-  constructor() {}
+  constructor(
+    public modalController : ModalController
+  ) {}
+
+  async openDetailFilm() {
+    const modal = await this.modalController.create({
+      component: DetailFilmPage
+    });
+    return await modal.present();
+  }
 
 }
