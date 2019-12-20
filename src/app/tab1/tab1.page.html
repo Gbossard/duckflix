@@ -1,41 +1,69 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Tab One
+  <ion-toolbar color="netflix-dark">
+    <ion-title text-left color="netflix-red">
+      DuckFlix
     </ion-title>
+
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon slot="icon-only" name="tv"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-    <ion-card class="welcome-card">
-      <img src="/assets/shapes.svg" alt="" />
-      <ion-card-header>
-        <ion-card-subtitle>Get Started</ion-card-subtitle>
-        <ion-card-title>Welcome to Ionic</ion-card-title>
-      </ion-card-header>
-      <ion-card-content>
-        <p>Now that your app has been created, you'll want to start building out features and components. Check out some of the resources below for next steps.</p>
-      </ion-card-content>
-    </ion-card>
-    <ion-list lines="none">
-      <ion-list-header>
-        <ion-label>Resources</ion-label>
-      </ion-list-header>
-      <ion-item href="https://ionicframework.com/docs/">
-        <ion-icon slot="start" color="medium" name="book"></ion-icon>
-        <ion-label>Ionic Documentation</ion-label>
-      </ion-item>
-      <ion-item href="https://ionicframework.com/docs/building/scaffolding">
-        <ion-icon slot="start" color="medium" name="build"></ion-icon>
-        <ion-label>Scaffold Out Your App</ion-label>
-      </ion-item>
-      <ion-item href="https://ionicframework.com/docs/layout/structure">
-        <ion-icon slot="start" color="medium" name="grid"></ion-icon>
-        <ion-label>Change Your App Layout</ion-label>
-      </ion-item>
-      <ion-item href="https://ionicframework.com/docs/theming/basics">
-        <ion-icon slot="start" color="medium" name="color-fill"></ion-icon>
-        <ion-label>Theme Your App</ion-label>
-      </ion-item>
-    </ion-list>
+    <img class="img-intro" src="../../assets/img/bright-netflix.jpg">
+    <ion-button class="bouton-intro" expand="full" color="netflix-dark">Regarder maintenant</ion-button>
+
+    <p class="box-title">Ma liste</p>
+    <div class="scroll-box">
+      <div class="movie">
+        <img src="../../assets/img/MV5BM2IxMjFmNWEtNmEyNS00MmNmLTk5ZWYtYTY5YTA1NjgwNDFmXkEyXkFqcGdeQXVyMzY0MTE3NzU@._V1_UY209_CR3,0,140,209_AL_.jpg">
+      </div>
+      <div class="movie">
+        <img src="../../assets/img/MV5BMjA5NzgxODE2NF5BMl5BanBnXkFtZTcwNTI1NTI0OQ@@._V1_UY209_CR0,0,140,209_AL_.jpg">
+      </div>
+      <div class="movie">
+        <img src="../../assets/img/MV5BMjMxNjY2MDU1OV5BMl5BanBnXkFtZTgwNzY1MTUwNTM@._V1_UY209_CR0,0,140,209_AL_.jpg">
+      </div>
+      <div class="movie">
+        <img src="../../assets/img/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_UY209_CR0,0,140,209_AL_.jpg">
+      </div>
+      <div class="movie">
+        <img src="../../assets/img/MV5BMzU5MjEwMTg2Nl5BMl5BanBnXkFtZTcwNzM3MTYxNA@@._V1_UY209_CR1,0,140,209_AL_.jpg">
+      </div>
+      <div class="movie">
+        <img src="../../assets/img/MV5BOWRiZDIxZjktMTA1NC00MDQ2LWEzMjUtMTliZmY3NjQ3ODJiXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UY209_CR5,0,140,209_AL_.jpg">
+      </div>
+      <div class="movie">
+        <img src="../../assets/img/MV5BNmVkMGM0ZTQtNDQwNS00NzgwLTkwYWYtNWE3MWFiOGUwODg5XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UY209_CR0,0,140,209_AL_.jpg">
+      </div>
+    </div>
+
+    <p class="box-title">Les plus gros succès de Netflix</p>
+    <div class="scroll-box">
+        <div class="movie">
+          <img src="../../assets/img/MV5BZDVjN2FkYTQtNTBlOC00MjM5LTgzMWEtZWRlNGUyYmNiOTFiXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX140_CR0,0,140,209_AL_.jpg">
+        </div>
+        <div class="movie">
+          <img src="../../assets/img/MV5BZTNkZmU0ZWQtZjQzMy00YTNmLWFmN2MtZGNkMmU1OThmMGYwXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UX140_CR0,0,140,209_AL_.jpg">
+        </div>
+        <div class="movie">
+          <img src="../../assets/img/MV5BMjMxNjY2MDU1OV5BMl5BanBnXkFtZTgwNzY1MTUwNTM@._V1_UY209_CR0,0,140,209_AL_.jpg">
+        </div>
+        <div class="movie">
+          <img src="../../assets/img/MV5BYjQ5NjM0Y2YtNjZkNC00ZDhkLWJjMWItN2QyNzFkMDE3ZjAxXkEyXkFqcGdeQXVyODIxMzk5NjA@._V1_UY209_CR3,0,140,209_AL_.jpg">
+        </div>
+        <div class="movie">
+          <img src="../../assets/img/MV5BMzU5MjEwMTg2Nl5BMl5BanBnXkFtZTcwNzM3MTYxNA@@._V1_UY209_CR1,0,140,209_AL_.jpg">
+        </div>
+        <div class="movie">
+          <img src="../../assets/img/MV5BOWRiZDIxZjktMTA1NC00MDQ2LWEzMjUtMTliZmY3NjQ3ODJiXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UY209_CR5,0,140,209_AL_.jpg">
+        </div>
+        <div class="movie">
+          <img src="../../assets/img/MV5BNmVkMGM0ZTQtNDQwNS00NzgwLTkwYWYtNWE3MWFiOGUwODg5XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UY209_CR0,0,140,209_AL_.jpg">
+        </div>
+      </div>
+
 </ion-content>
