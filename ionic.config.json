@@ -1,5 +1,7 @@
 {
   "name": "duckflix",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
