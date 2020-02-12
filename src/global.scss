@@ -25,11 +25,17 @@
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
 
-ion-toolbar.in-toolbar ion-buttons, ion-toolbar.in-toolbar ion-title {
+ion-toolbar.in-toolbar ion-buttons, ion-toolbar.ion-toolbar ion-title {
     padding-left: 10px;
 }
 
 .logo-duckflix {
     height: 40px;
     width: auto;
+}
+.img_list_recherche {
+    width: 150px;
+}
+.item-native {
+    padding-left: 0!important;
 }
