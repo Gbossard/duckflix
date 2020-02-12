@@ -1,0 +1,18 @@
+#content_profil ion-grid ion-text.nom-profil {
+    text-align: center;
+    display: block;
+    margin-top: 5px;
+    font-size: 12px;
+}
+.picto_modif_profil {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+.button-modif {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+    font-size: 14px;
+}
