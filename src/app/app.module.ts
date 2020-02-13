@@ -18,6 +18,7 @@ import {DetailFilmPageModule} from './detail-film/detail-film.module';
 import { GererProfilPageModule } from './gerer-profil/gerer-profil.module';
 import {ParametresPageModule} from './parametres/parametres.module';
 import {ComptesPageModule} from './comptes/comptes.module';
+import { AidePageModule } from './aide/aide.module';
 
 export const firebaseConfig = {
   apiKey: "AIzaSyD2IPA3fslrGdm9NN9cf7neX7XAuQ4C2HQ",
@@ -44,7 +45,8 @@ export const firebaseConfig = {
     DetailFilmPageModule, 
     GererProfilPageModule, 
     ParametresPageModule, 
-    ComptesPageModule
+    ComptesPageModule, 
+    AidePageModule
   ],
   providers: [
     StatusBar,

@@ -24,6 +24,10 @@ const routes: Routes = [
   {
     path: 'comptes',
     loadChildren: () => import('./comptes/comptes.module').then( m => m.ComptesPageModule)
+  },
+  {
+    path: 'aide',
+    loadChildren: () => import('./aide/aide.module').then( m => m.AidePageModule)
   }
 
 
