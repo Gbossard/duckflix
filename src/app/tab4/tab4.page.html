@@ -18,20 +18,14 @@
         <ion-text class="nom-profil">Alain</ion-text>
       </ion-col>
     </ion-row>
-    <ion-buttons class="button-modif"><ion-img class="picto_modif_profil" src="../../assets/img/edit.png"></ion-img>Gérer les profils</ion-buttons>
-
-    <ion-row>
-      <ion-col size="12">
-        <ion-buttons class="button_list">
-          <ion-img class="picto_modif_profil2" src="../../assets/img/tick.png"></ion-img>Ma Liste<ion-img class="picto_modif_profil3" src="../../assets/img/right.png"></ion-img>
-        </ion-buttons>
-      </ion-col>
-    </ion-row>
+    <ion-button expend="full" color="netflix-dark" (click)="openGererProfil()" class="button-modif"><ion-img class="picto_modif_profil" src="../../assets/img/edit.png"></ion-img>Gérer les profils</ion-button>
   </ion-grid>
 
+  <ion-button id="button_ma_list" class="button_list">
+    <ion-img class="picto_modif_profil2" src="../../assets/img/tick.png"></ion-img>Ma Liste<ion-img class="picto_modif_profil3" src="../../assets/img/right.png"></ion-img>
+  </ion-button>
   
   <!-- faire une ligne pour la liste de films -->
-
 
   <ion-list class="list_params_profil">
       <ion-item color="dark">
