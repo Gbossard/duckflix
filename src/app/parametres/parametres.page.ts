@@ -1,14 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-
 import {ModalController} from '@ionic/angular';
 
 
 @Component({
-  selector: 'app-gerer-profil',
-  templateUrl: './gerer-profil.page.html',
-  styleUrls: ['./gerer-profil.page.scss'],
+  selector: 'app-parametres',
+  templateUrl: './parametres.page.html',
+  styleUrls: ['./parametres.page.scss'],
 })
-export class GererProfilPage implements OnInit {
+export class ParametresPage implements OnInit {
 
   constructor(
     public modalController : ModalController

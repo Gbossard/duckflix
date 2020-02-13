@@ -1,9 +1,33 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>gerer-profil</ion-title>
+<ion-content color="netflix-dark" id="content_gerer_profil">
+  <ion-toolbar color="netflix-dark">
+    <ion-buttons slot="start" class="button-fermer-modal">
+      <ion-button (click)="fermerModal()">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Gérer les profils</ion-title>
   </ion-toolbar>
-</ion-header>
 
-<ion-content>
-
+  <ion-grid id="grid_liste_profil"> 
+    <ion-row>
+      <ion-col size="3">
+        <ion-img src="../../assets/img/profil1_edit.png"></ion-img>
+        <ion-text class="nom-profil">Amélie</ion-text>
+      </ion-col>
+      <ion-col size="3">
+        <ion-img src="../../assets/img/profil2_edit.png"></ion-img>
+        <ion-text class="nom-profil">Gaëlle</ion-text>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="3">
+        <ion-img src="../../assets/img/profil3_edit.png"></ion-img>
+        <ion-text class="nom-profil">Oriane</ion-text>
+      </ion-col>
+      <ion-col size="3">
+        <ion-img src="../../assets/img/profil4_edit.png"></ion-img>
+        <ion-text class="nom-profil">Alain</ion-text>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>

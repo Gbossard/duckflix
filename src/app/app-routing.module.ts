@@ -16,6 +16,14 @@ const routes: Routes = [
   {
     path: 'gerer-profil',
     loadChildren: () => import('./gerer-profil/gerer-profil.module').then( m => m.GererProfilPageModule)
+  },
+  {
+    path: 'parametres',
+    loadChildren: () => import('./parametres/parametres.module').then( m => m.ParametresPageModule)
+  },
+  {
+    path: 'comptes',
+    loadChildren: () => import('./comptes/comptes.module').then( m => m.ComptesPageModule)
   }
 
 
