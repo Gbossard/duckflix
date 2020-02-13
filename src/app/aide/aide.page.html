@@ -1,9 +1,26 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>aide</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
+  <ion-toolbar>
+    <ion-buttons slot="start" class="button-fermer-modal">
+      <ion-button (click)="fermerModal()">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>DUCKFLIX</ion-title>
+  </ion-toolbar>
 
+  <ion-title class="title_page">Trouver de l'aide en ligne</ion-title>
+  <ion-list class="list_aide">
+    <ion-item><ion-icon name="enter-outline"></ion-icon>Centre d'aide</ion-item>
+    <ion-item><ion-icon name="card-outline"></ion-icon>Mettre à jour le mode de paiement</ion-item>
+    <ion-item><ion-icon name="print-outline"></ion-icon>Demander un titre</ion-item>
+    <ion-item><ion-icon name="lock-closed"></ion-icon>Mettre à jour le mot de passe</ion-item>
+    <ion-item><ion-icon name="remove-circle"></ion-icon>Annuler le compte</ion-item>
+    <ion-item><ion-icon name="build"></ion-icon>Résoudre un problème de connexion</ion-item>
+    <ion-item><ion-icon name="shield-checkmark"></ion-icon>Confidentialité</ion-item>
+    <ion-item><ion-icon name="reader-outline"></ion-icon>Conditions d'utilisation</ion-item>
+  </ion-list>
+
+  <ion-text class="title_page"><h1>Contacter le Service clientèle de Netflix</h1></ion-text>
+  <ion-text class="text_page">Nous vous mettrons en relation gratuitement, via votre connexion Internet.</ion-text>
+  <div class="container_btn"><ion-button color="netflix-dark" class="btn_appeler"><ion-icon name="call"></ion-icon>APPELER</ion-button></div>
 </ion-content>
