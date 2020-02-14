@@ -12,6 +12,22 @@ const routes: Routes = [
   },  {
     path: 'tab4',
     loadChildren: () => import('./tab4/tab4.module').then( m => m.Tab4PageModule)
+  },
+  {
+    path: 'gerer-profil',
+    loadChildren: () => import('./gerer-profil/gerer-profil.module').then( m => m.GererProfilPageModule)
+  },
+  {
+    path: 'parametres',
+    loadChildren: () => import('./parametres/parametres.module').then( m => m.ParametresPageModule)
+  },
+  {
+    path: 'comptes',
+    loadChildren: () => import('./comptes/comptes.module').then( m => m.ComptesPageModule)
+  },
+  {
+    path: 'aide',
+    loadChildren: () => import('./aide/aide.module').then( m => m.AidePageModule)
   }
 
 
