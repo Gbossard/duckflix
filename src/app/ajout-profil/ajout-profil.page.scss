@@ -1,0 +1,35 @@
+#toolbar_ajout_profil ion-title{
+    text-align: center;
+}
+#toolbar_ajout_profil .btn_enregistrer {
+    padding-right: 10px;
+    font-size: 14px;
+    opacity: 1;
+}
+#content_ajout_profil ion-input {
+    color:white;
+    background-color: #222428;
+    border-radius: 2px;
+    margin-top: 20px;
+}
+#content_ajout_profil ion-row {
+    display: flex;
+    justify-content: center;
+}
+#content_ajout_profil {
+    margin-top: 30px;
+}
+.div_edit {
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    font-size: 18px;
+    position: absolute;
+    right: -5px;
+    bottom: -5px;
+}

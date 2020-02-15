@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {ModalController} from '@ionic/angular';
 
 @Component({
   selector: 'app-ma-list',
@@ -7,7 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MaListPage implements OnInit {
 
-  constructor() { }
+  constructor(
+    public modalController : ModalController
+  ) { }
+
+  fermerModal() {
+    this.modalController.dismiss();
+  }
 
   ngOnInit() {
   }

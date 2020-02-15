@@ -19,7 +19,9 @@ import { GererProfilPageModule } from './gerer-profil/gerer-profil.module';
 import {ParametresPageModule} from './parametres/parametres.module';
 import {ComptesPageModule} from './comptes/comptes.module';
 import { AidePageModule } from './aide/aide.module';
-
+import {AjoutProfilPageModule} from './ajout-profil/ajout-profil.module';
+import {MaListPageModule} from './ma-list/ma-list.module';
+ 
 export const firebaseConfig = {
   apiKey: "AIzaSyD2IPA3fslrGdm9NN9cf7neX7XAuQ4C2HQ",
   authDomain: "duckflix-8d0d1.firebaseapp.com",
@@ -46,7 +48,9 @@ export const firebaseConfig = {
     GererProfilPageModule, 
     ParametresPageModule, 
     ComptesPageModule, 
-    AidePageModule
+    AidePageModule, 
+    AjoutProfilPageModule, 
+    MaListPageModule
   ],
   providers: [
     StatusBar,

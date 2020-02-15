@@ -2,10 +2,10 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  // {
-  //   path: '',
-  //   loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
-  // },
+  {
+    path: '',
+    loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
+  },
   {
     path:'',
     redirectTo: 'connexion',
@@ -50,6 +50,10 @@ const routes: Routes = [
   {
     path: 'connexion',
     loadChildren: () => import('./connexion/connexion.module').then( m => m.ConnexionPageModule)
+  },
+  {
+    path: 'ajout-profil',
+    loadChildren: () => import('./ajout-profil/ajout-profil.module').then( m => m.AjoutProfilPageModule)
   }
 
 

@@ -1,15 +1,20 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>connexion</ion-title>
+<ion-header color="netflix-dark">
+  <ion-toolbar color="netflix-dark">
+    <ion-img class='logo_duckflix' src="../../assets/img/logo_duckflix.png"></ion-img>
+    <ion-icon name="pencil" slot="end" class="pencil" (click)="openGererProfil()"></ion-icon>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content color="netflix-dark">
+  <ion-text class="text_qui">Qui est-ce ?</ion-text>
   <ion-grid id="grid_liste_profil"> 
     <ion-row>
       <ion-col size="3"  *ngFor="let user of users" (click)="connect(user)">
         <ion-img src="../../assets/img/{{user.image}}"></ion-img>
         <ion-text class="nom-profil">{{user.name}}</ion-text>
+      <ion-col size="3" (click)="openAjoutProfil()">
+        <ion-img class="picto_add" src="../../assets/img/add.png"></ion-img>
+        <ion-text class="nom-profil">Ajouter un profil</ion-text>
       </ion-col>
     </ion-row>
   </ion-grid>
