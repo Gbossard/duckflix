@@ -4,6 +4,7 @@ import {GererProfilPage} from '../gerer-profil/gerer-profil.page';
 import {ParametresPage} from '../parametres/parametres.page';
 import {ComptesPage} from '../comptes/comptes.page';
 import {AidePage} from '../aide/aide.page';
+import {MaListPage} from '../ma-list/ma-list.page';
 
 @Component({
   selector: 'app-tab4',
@@ -19,6 +20,13 @@ export class Tab4Page {
   async openGererProfil() {
     const modal = await this.modalController.create({
       component: GererProfilPage
+    });
+    return await modal.present();
+  }
+
+  async openMaList() {
+    const modal = await this.modalController.create({
+      component: MaListPage
     });
     return await modal.present();
   }
