@@ -1,1 +1,19 @@
+ion-col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    ion-row{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        ion-button{
+            margin-top: 35px;
+        }
+        ion-img{
+            width: 50%;
+            margin:auto;
+        }
+    }
+}
 

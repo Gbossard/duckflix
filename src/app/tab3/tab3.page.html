@@ -1,9 +1,27 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>
-      
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
 
-<ion-content></ion-content>
+
+<ion-content color="netflix-dark">
+
+  <ion-toolbar color="netflix-dark">
+    <ion-buttons slot="start" class="button-fermer-modal">
+      <ion-button (click)="fermerModal()">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title color="netflix-red">DUCKFLIX</ion-title>
+  </ion-toolbar>
+
+  <ion-grid>
+    <ion-col>
+      <ion-row >
+        <ion-img src="../../assets/img/telecharger.png"></ion-img>
+        <ion-text>
+          Les films et séries TV que vous <br/>
+          téléchargez apparaîtront ici
+        </ion-text>
+        <ion-button expand="full" color="dark">TROUVEZ VOS VIDÉOS À TÉLÉCHARGER</ion-button>
+      </ion-row>
+    </ion-col>
+  </ion-grid>
+  
+</ion-content>
