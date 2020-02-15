@@ -6,15 +6,15 @@ const routes: Routes = [
     path: '',
     loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
   },
-  // {
-  //   path:'',
-  //   redirectTo: 'connexion',
-  //   pathMatch:'full'
-  // },
-  // {
-  //   path: 'connexion',
-  //   loadChildren: () => import('./connexion/connexion.module').then( m => m.ConnexionPageModule)
-  // },
+  {
+    path:'',
+    redirectTo: 'connexion',
+    pathMatch:'full'
+  },
+  {
+    path: 'connexion',
+    loadChildren: () => import('./connexion/connexion.module').then( m => m.ConnexionPageModule)
+  },
   {
     path: 'detail-film',
     loadChildren: () => import('./detail-film/detail-film.module').then( m => m.DetailFilmPageModule)
