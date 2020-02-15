@@ -1,9 +1,136 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>parametres</ion-title>
+<ion-header color="netflix-dark" id="header_params">
+  <ion-toolbar color="netflix-dark">
+    <ion-buttons slot="start" class="button-fermer-modal">
+      <ion-button (click)="fermerModal()">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Paramètres</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content id="content_params">
+  <ion-list lines="none">
+    <ion-list-header><b>Lecture vidéo</b></ion-list-header>
+    <ion-item color="dark">
+      <ion-icon name="cellular" slot="start"></ion-icon>
+      <ion-label>
+        <ion-text>Consommation des données cellulaires</ion-text><br />
+        <ion-text class="ion-text-small">Automatique</ion-text>
+      </ion-label>
+    </ion-item>
+  </ion-list>
 
+  <ion-list>
+    <ion-list-header><b>Notifications</b></ion-list-header>
+    <ion-item color="dark">
+      <ion-icon class="padding_ion_icon" name="notifications"></ion-icon>
+      <ion-label>Autoriser les notifications</ion-label>
+      <ion-toggle slot="end"></ion-toggle>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-list-header><b>Téléchargement</b></ion-list-header>
+    <ion-item color="dark">
+      <ion-icon class="padding_ion_icon" name="wifi"></ion-icon>
+      <ion-label>WI-FI uniquement</ion-label>
+      <ion-toggle slot="end"></ion-toggle>
+    </ion-item>
+    <ion-item color="dark">
+      <ion-icon class="padding_ion_icon" name="download"></ion-icon>
+      <ion-label>Téléchargement automatique</ion-label>
+      <ion-toggle slot="end"></ion-toggle>
+    </ion-item>
+    <ion-item color="dark">
+      <ion-icon name="videocam" slot="start"></ion-icon>
+      <ion-label>
+        <ion-text>Qualité vidéo</ion-text><br />
+        <ion-text class="ion-text-small">Standard</ion-text>
+      </ion-label>
+    </ion-item>
+    <ion-item color="dark">
+      <ion-icon name="albums" slot="start"></ion-icon>
+      <ion-label>
+        <ion-text>Emplacement de téléchargement</ion-text><br />
+        <ion-text class="ion-text-small">Stockage interne</ion-text>
+      </ion-label>
+    </ion-item>
+    <ion-item color="dark">
+      <ion-icon name="trash" slot="start"></ion-icon>
+      <ion-label>
+        <ion-text>Supprimer toutes les vidéos</ion-text><br />
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-list-header><b>A propos</b></ion-list-header>
+    <ion-item color="dark">
+      <ion-icon name="calculator" slot="start"></ion-icon>
+      <ion-label>Appareil</ion-label> 
+    </ion-item>
+    <ion-item color="dark">
+      <ion-icon name="person" slot="start"></ion-icon>
+      <ion-label>
+        <ion-text>Compte</ion-text><br />
+        <ion-text class="ion-text-small">E-mail : amel.beirens@gmail.com</ion-text>
+      </ion-label>
+      <ion-icon name="enter-outline" slot="end"></ion-icon>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-list-header><b>Diagnostics</b></ion-list-header>
+    <ion-item color="dark">
+      <ion-icon name="radio" slot="start"></ion-icon>
+      <ion-label>
+        <ion-text>Vérifier le réseau</ion-text><br />
+      </ion-label>
+    </ion-item>
+    <ion-item color="dark">
+      <ion-icon name="play" slot="start"></ion-icon>
+      <ion-label>
+        <ion-text>Spécifications de lecture</ion-text><br />
+      </ion-label>
+    </ion-item>
+    <ion-item color="dark">
+      <ion-icon name="speedometer" slot="start"></ion-icon>
+      <ion-label>
+        <ion-text>Test de vitesse internet</ion-text><br />
+      </ion-label>
+      <ion-icon name="enter-outline" slot="end"></ion-icon>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-list-header><b>Informations légales</b></ion-list-header>
+    <ion-item color="dark">
+      <ion-icon name="document" slot="start"></ion-icon>
+      <ion-label>
+        <ion-text>Licences du logiciel ouvert</ion-text>
+      </ion-label>
+    </ion-item>
+    <ion-item color="dark">
+      <ion-icon name="document" slot="start"></ion-icon>
+      <ion-label>
+        <ion-text>Confidentialité</ion-text>
+      </ion-label>
+      <ion-icon name="enter-outline" slot="end"></ion-icon>
+    </ion-item>
+    <ion-item color="dark">
+      <ion-icon name="document" slot="start"></ion-icon>
+      <ion-label>
+        <ion-text>Préférences de cookies</ion-text><br />
+      </ion-label>
+      <ion-icon name="enter-outline" slot="end"></ion-icon>
+    </ion-item>
+    <ion-item color="dark">
+      <ion-icon name="document" slot="start"></ion-icon>
+      <ion-label>
+        <ion-text>Conditions d'utilisation</ion-text><br />
+      </ion-label>
+      <ion-icon name="enter-outline" slot="end"></ion-icon>
+    </ion-item>
+  </ion-list>
 </ion-content>
