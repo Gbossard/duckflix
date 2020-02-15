@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar color="netflix-dark" id="toolbar_ajout_profil">
+    <ion-buttons slot="start" class="button-fermer-modal">
+      <ion-button (click)="fermerModal()">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Créer un profil</ion-title>
+    <ion-text class="btn_enregistrer" slot="end">Enregistrer</ion-text>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content id="content_ajout_profil" color="netflix-dark">
+  <ion-grid>
+    <ion-row>
+      <ion-col size="4">
+        <ion-img src="../../assets/img/profil4.png"></ion-img>
+        <div class="div_edit">
+          <ion-icon name="pencil"></ion-icon>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="6">
+        <ion-input id="champ_input" type="text" placeholder="Nom de profil"></ion-input>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

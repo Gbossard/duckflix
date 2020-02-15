@@ -46,6 +46,10 @@ const routes: Routes = [
   {
     path: 'connexion',
     loadChildren: () => import('./connexion/connexion.module').then( m => m.ConnexionPageModule)
+  },
+  {
+    path: 'ajout-profil',
+    loadChildren: () => import('./ajout-profil/ajout-profil.module').then( m => m.AjoutProfilPageModule)
   }
 
 

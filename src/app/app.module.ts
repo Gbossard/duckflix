@@ -19,6 +19,7 @@ import { GererProfilPageModule } from './gerer-profil/gerer-profil.module';
 import {ParametresPageModule} from './parametres/parametres.module';
 import {ComptesPageModule} from './comptes/comptes.module';
 import { AidePageModule } from './aide/aide.module';
+import {AjoutProfilPageModule} from './ajout-profil/ajout-profil.module';
 
 export const firebaseConfig = {
   apiKey: "AIzaSyD2IPA3fslrGdm9NN9cf7neX7XAuQ4C2HQ",
@@ -46,7 +47,8 @@ export const firebaseConfig = {
     GererProfilPageModule, 
     ParametresPageModule, 
     ComptesPageModule, 
-    AidePageModule
+    AidePageModule, 
+    AjoutProfilPageModule
   ],
   providers: [
     StatusBar,
