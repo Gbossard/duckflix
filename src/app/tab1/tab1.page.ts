@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 import {ModalController} from '@ionic/angular';
 import {DetailFilmPage} from '../detail-film/detail-film.page';
 import { AngularFireDatabase } from '@angular/fire/database';
+import {ActivatedRoute} from "@angular/router";
 
 @Component({
   selector: 'app-tab1',
@@ -11,15 +12,20 @@ import { AngularFireDatabase } from '@angular/fire/database';
 })
 export class Tab1Page {
   public movies : any;
-  constructor(public modalController : ModalController, public afDB: AngularFireDatabase,) {
+  public user : any;
+  constructor(public modalController : ModalController, public afDB: AngularFireDatabase, public activatedRoute : ActivatedRoute) {
     this.afDB.list('/Movies').valueChanges().subscribe((data)=> {
       this.movies = data;
+    });
+    this.activatedRoute.queryParams.subscribe((res)=>{
+      this.user = res;
+      console.log(this.user);
     });
   }
   add() {
     this.afDB.list('Movies/').push({
-      title: 'Coco',
-      image : 'http://fr.web.img3.acsta.net/c_215_290/pictures/17/09/15/12/42/0056825.jpg'
+      name : 'Oriane',
+      image: 'user3.jpg'
     });
   }
 
