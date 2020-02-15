@@ -1,0 +1,40 @@
+.nom-profil {
+    text-align: center;
+    display: block;
+    margin-top: 5px;
+    font-size: 12px;
+}
+#grid_liste_profil ion-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#grid_liste_profil {
+    margin-top: 30px;
+}
+.titre_co {
+    text-align: center;
+}
+.logo_duckflix {
+    width: 100px;
+    margin-top: 15px;
+    margin: auto;
+}
+.text_qui {
+    text-align: center;
+    display: block;
+    margin-top: 15px;
+    font-size: 18px;
+}
+.picto_add {
+    margin: auto;
+    display: block;
+    text-align: center;
+    background-color: cyan;
+    height: auto;
+}
+.pencil {
+    position: absolute;
+    right: 15px;
+    font-size: 22px;
+}
