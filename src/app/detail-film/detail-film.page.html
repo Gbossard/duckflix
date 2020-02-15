@@ -1,20 +1,70 @@
-<ion-toolbar color="netflix-dark">
-  <ion-buttons slot="start" class="button-fermer-modal">
-    <ion-button (click)="fermerModal()">
-      <ion-icon name="arrow-back"></ion-icon>
-    </ion-button>
-  </ion-buttons>
-  <img src="../../assets/img/bright-netflix.jpg">
-</ion-toolbar>
+<ion-header>
+  <ion-toolbar color="netflix-dark">
+    <ion-buttons slot="start" class="button-fermer-modal">
+      <ion-button (click)="fermerModal()">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
 
-<ion-content>
-  <div>
-    <p color="netflix-dark">Recommandé à 92%</p>
-    <p>date</p>
 
-  </div>
+<ion-content color="netflix-dark">
+  <ion-img class="img_infos_film"  src="../../assets/img/Bright.png"></ion-img>
+  <ion-grid>
+    <ion-row class="row1">
+      <ion-col size="4">
+        <ion-text class="text_reco text_row_1">Recommandé à 98%</ion-text>
+      </ion-col>
+      <ion-col size="1" color="danger">
+        <ion-text class="text_row_1">2017</ion-text>
+      </ion-col>
+      <ion-col size="1" color="warning">
+        <ion-text class="text_row_1 col_age">16+</ion-text>
+      </ion-col>
+      <ion-col size="2" color="danger">
+        <ion-text class="text_row_1">1h57m</ion-text>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button class="btn_row2" expand="full" color="light">
+          <ion-icon name="play" slot="start"></ion-icon>
+          <ion-text>Lecture</ion-text>
+        </ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button class="btn_row2" expand="full" color="medium">
+          <ion-icon name="download" slot="start"></ion-icon>
+          <ion-text>Télécharger</ion-text>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-text class="mb-2">
+      A L.A. où les tensions entre espèces font rage, un flic humain et son partenaire orque tombent sur un objet uissant et se retrouvent mêlés à une guerre de territoires.
+    </ion-text><br />
+    <ion-text class="mb-2">
+      <b>Avec :</b> Will Smith, Joel Edgerton, Noomi Rapace
+    </ion-text>
+    <ion-text class="mb-2">
+      <b>Réalisateur : </b>David Ayer
+    </ion-text><br />
+
+    <ion-row id="row3">
+      <ion-col size="2">
+        <ion-icon name="add"></ion-icon>
+        <ion-text>Ma liste</ion-text>
+      </ion-col>
+      <ion-col size="2">
+        <ion-icon name="thumbs-up"></ion-icon>
+        <ion-text>Evaluer</ion-text>
+      </ion-col>
+      <ion-col size="2">
+        <ion-icon name="share-social"></ion-icon>
+        <ion-text>Partager</ion-text>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
   
-  <div>
-
-  </div>
 </ion-content>
