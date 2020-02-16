@@ -13,9 +13,9 @@
 </ion-header>
 
 <ion-content>
-    <img class="img-intro" src="../../assets/img/bright-netflix.jpg">
+    <img class="img-intro" src="../../assets/img/{{afficheImage}}">
     <ion-button (click)="openDetailFilm()" class="bouton-intro" expand="full" color="netflix-dark">Regarder maintenant</ion-button>
-    <ion-button (click)="add()">Ajouter</ion-button>
+    <!--<ion-button (click)="add()">Ajouter</ion-button>-->
     <p class="box-title">Ma liste</p>
     <div class="scroll-box">
         <div class="movie" *ngFor="let movie of moviesList">
