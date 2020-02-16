@@ -20,7 +20,6 @@ export class ConnexionPage{
   }
 
   connect(user) {
-    console.log(user);
     this.router.navigate(['tab1'], {
       queryParams: user
     })

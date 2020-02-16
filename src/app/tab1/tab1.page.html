@@ -18,33 +18,15 @@
     <ion-button (click)="add()">Ajouter</ion-button>
     <p class="box-title">Ma liste</p>
     <div class="scroll-box">
-        <div class="movie">
-            <img src="../../assets/img/avengers3.jpg">
-        </div>
-        <div class="movie">
-            <img src="../../assets/img/coco.jpg">
-        </div>
-        <div class="movie">
-            <img src="../../assets/img/narcos.png">
-        </div>
-        <div class="movie">
-            <img src="../../assets/img/stuart_little.jpg">
-        </div>
-        <div class="movie">
-            <img src="../../assets/img/PulpFiction.jpg">
-        </div>
-        <div class="movie">
-            <img src="../../assets/img/fast_and_furious.jpg">
-        </div>
-        <div class="movie">
-            <img src="../../assets/img/civilWar.jpg">
+        <div class="movie" *ngFor="let movie of moviesList">
+            <img src="../../assets/img/{{ movie.image }}">
         </div>
     </div>
 
     <p class="box-title">Les plus gros succès de Netflix</p>
     <div class="scroll-box">
         <div class="movie" *ngFor="let movie of movies">
-            <img src="{{ movie.image }}">
+            <img src="../../assets/img/{{ movie.image }}">
         </div>
       </div>
 </ion-content>

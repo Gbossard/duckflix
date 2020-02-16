@@ -12,6 +12,7 @@
       <ion-col size="3"  *ngFor="let user of users" (click)="connect(user)">
         <ion-img src="../../assets/img/{{user.image}}"></ion-img>
         <ion-text class="nom-profil">{{user.name}}</ion-text>
+      </ion-col>
       <ion-col size="3" (click)="openAjoutProfil()">
         <ion-img class="picto_add" src="../../assets/img/add.png"></ion-img>
         <ion-text class="nom-profil">Ajouter un profil</ion-text>
