@@ -10,20 +10,20 @@
 
 
 <ion-content color="netflix-dark">
-  <ion-img class="img_infos_film"  src="../../assets/img/Bright.png"></ion-img>
+  <ion-img class="img_infos_film"  src="../../assets/img/{{movie.image}}"></ion-img>
   <ion-grid>
     <ion-row class="row1">
       <ion-col size="4">
         <ion-text class="text_reco text_row_1">Recommandé à 98%</ion-text>
       </ion-col>
       <ion-col size="1" color="danger">
-        <ion-text class="text_row_1">2017</ion-text>
+        <ion-text class="text_row_1">{{movie.annee}}</ion-text>
       </ion-col>
       <ion-col size="1" color="warning">
         <ion-text class="text_row_1 col_age">16+</ion-text>
       </ion-col>
       <ion-col size="2" color="danger">
-        <ion-text class="text_row_1">1h57m</ion-text>
+        <ion-text class="text_row_1">{{movie.duree}}</ion-text>
       </ion-col>
     </ion-row>
     <ion-row>
@@ -41,18 +41,19 @@
       </ion-col>
     </ion-row>
     <ion-text class="mb-2">
-      A L.A. où les tensions entre espèces font rage, un flic humain et son partenaire orque tombent sur un objet uissant et se retrouvent mêlés à une guerre de territoires.
+    {{movie.desc}}
     </ion-text><br />
     <ion-text class="mb-2">
-      <b>Avec :</b> Will Smith, Joel Edgerton, Noomi Rapace
+      <b>Avec :</b> {{movie.acteurs}}
     </ion-text>
     <ion-text class="mb-2">
-      <b>Réalisateur : </b>David Ayer
+      <b>Réalisateur : </b>{{movie.real}}
     </ion-text><br />
 
     <ion-row id="row3">
       <ion-col size="2">
-        <ion-icon name="add"></ion-icon>
+        <ion-icon *ngIf="isInList" name="checkmark-outline"></ion-icon>
+        <ion-icon *ngIf="!isInList" name="add"></ion-icon>
         <ion-text>Ma liste</ion-text>
       </ion-col>
       <ion-col size="2">
